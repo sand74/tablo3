@@ -1,0 +1,69 @@
+.Forecast {
+  max-width: 250px;
+  max-height: 170px;
+  width: 100%;
+  height: 100%;
+  /* border: 2px solid #b3bdc7;
+  border-radius: 7px;
+  background-color: #ffffff; */
+  padding: 3px;
+}
+
+.Forecast h1 {
+  font-size: 0.8em;
+  margin-bottom: 0;
+}
+
+.Forecast ul {
+  list-style: none;
+  margin: 0;
+  padding: 3px;
+  padding-left: 50px;
+  cursor: default;
+}
+
+.Forecast li {
+  font-size: 0.82em;
+}
+
+.Forecast img {
+  margin: 3px;
+  width: 36px;
+  height: 36px;
+  float: left;
+  cursor: pointer;
+}
+
+.Forecast .Text {
+  width: 100%;
+  height: 65%;
+  font-size: 0.74em;
+  padding: 3px;
+  padding-top: 0;
+  overflow: auto;
+  cursor: default;
+  /* border: 1px solid black; */
+}
+
+.Forecast .title {
+  width: 100%;
+  height: 32%;
+  /* border: 1px solid black; */
+  padding: 2px;
+}
+
+.Header {
+  width: 100%;
+  height: 14%;
+  text-align: center;
+  font-family: "Times New Roman", Helvetica, serif;
+  font-size: 1em;
+  cursor: default;
+}
+
+.Body {
+  width: 100%;
+  height: 86%;
+  border: 2px solid #b3bdc7;
+  border-radius: 7px;
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="36px" viewBox="0 0 42 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>weather_banner</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="weather_banner">
+            <g id="pic">
+                <path d="M5.5,0.5 C4.53350169,0.5 3.65850169,0.891750844 3.02512627,1.52512627 C2.39175084,2.15850169 2,3.03350169 2,4 L2.00016457,26.007843 C1.07436203,26.9153025 0.5,28.1799412 0.5,29.5787172 C0.5,30.9594291 1.05964406,32.2094291 1.96446609,33.1142511 C2.86928813,34.0190731 4.11928813,34.5787172 5.5,34.5787172 C6.46915025,34.5787172 7.37396463,34.3031275 8.14012565,33.8257395 C9.01844273,33.278468 9.71474765,32.4664331 10.1171987,31.5011837 L38.9999795,31.5 C39.6903559,31.5 40.3153559,31.220178 40.767767,30.767767 C41.220178,30.3153559 41.5,29.6903559 41.5,29 L41.5,7 C41.5,6.30964406 41.220178,5.68464406 40.767767,5.23223305 C40.3153559,4.77982203 39.6903559,4.5 39,4.5 L8.98767663,4.29693786 C9.0798442,3.18127611 8.64798532,2.16390895 7.91184689,1.46365426 C7.28407373,0.866482481 6.43483031,0.5 5.5,0.5 Z" id="Combined-Shape" stroke="#6B6969" fill="#FFFFFF"></path>
+                <circle id="Oval" fill="#2A88F7" cx="5.5" cy="29.5" r="2.5"></circle>
+                <line x1="5.5" y1="17.5393586" x2="5.5" y2="4" id="Path-105" stroke="#ED3E3E" stroke-width="2" stroke-linecap="round"></line>
+                <line x1="5.5" y1="29.5393586" x2="5.5" y2="18" id="Path-105" stroke="#2A88F7" stroke-width="2" stroke-linecap="square"></line>
+            </g>
+            <text id="visib" font-family="AvenirNext-DemiBold, Avenir Next" font-size="6" font-weight="500" fill="#3D3D3D">
+                <tspan x="13" y="28">10 км</tspan>
+            </text>
+            <text id="wind" font-family="AvenirNext-DemiBold, Avenir Next" font-size="6" font-weight="500" fill="#3D3D3D">
+                <tspan x="13" y="20">5 м/с</tspan>
+            </text>
+            <text id="temp" font-family="AvenirNext-DemiBold, Avenir Next" font-size="6" font-weight="500" fill="#3D3D3D">
+                <tspan x="13" y="12">-12 C</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

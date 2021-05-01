@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320px" height="300px" viewBox="0 0 320 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>vit_legend_table</title>
+    <desc>Created with Sketch.</desc>
+    <g id="vit_legend_table" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#B3BDC7" stroke-width="3" fill="#FFFFFF" x="1.5" y="1.5" width="317" height="297" rx="8"></rect>
+        <text id="171-ед." font-family="AvenirNext-Regular, Avenir Next" font-size="14" font-weight="normal" fill="#000000">
+            <tspan x="255.438" y="277">171 ед.</tspan>
+        </text>
+        <text id="419-ед." font-family="AvenirNext-Regular, Avenir Next" font-size="14" font-weight="normal" fill="#000000">
+            <tspan x="255.438" y="230">419 ед.</tspan>
+        </text>
+        <text id="514-ед." font-family="AvenirNext-Regular, Avenir Next" font-size="14" font-weight="normal" fill="#000000">
+            <tspan x="255.438" y="179">514 ед.</tspan>
+        </text>
+        <text id="1621,8-км" font-family="AvenirNext-Regular, Avenir Next" font-size="14" font-weight="normal" fill="#000000">
+            <tspan x="237.464" y="129">1621,8 км</tspan>
+        </text>
+        <text id="2695,9-км" font-family="AvenirNext-Regular, Avenir Next" font-size="14" font-weight="normal" fill="#000000">
+            <tspan x="237.464" y="80">2695,9 км</tspan>
+        </text>
+        <text id="Железнодорожные-стан" font-family="AvenirNext-Regular, Avenir Next" font-size="14" font-weight="normal" fill="#000000">
+            <tspan x="19.578" y="278">Железнодорожные станции  </tspan>
+        </text>
+        <text id="Железнодорожные-пере" font-family="AvenirNext-Regular, Avenir Next" font-size="14" font-weight="normal" fill="#000000">
+            <tspan x="17.695" y="230">Железнодорожные переезды  </tspan>
+        </text>
+        <text id="Ж.д.-мосты-и-путепро" font-family="AvenirNext-Regular, Avenir Next" font-size="14" font-weight="normal" fill="#000000">
+            <tspan x="17.689" y="179">Ж.д. мосты и путепроводы  </tspan>
+        </text>
+        <text id="Развернутая-длина-эл" font-family="AvenirNext-Regular, Avenir Next" font-size="14" font-weight="normal" fill="#000000">
+            <tspan x="18" y="119">Развернутая длина </tspan>
+            <tspan x="18" y="138">электрифицированных путей  </tspan>
+        </text>
+        <text id="Развернутая-длина" font-family="AvenirNext-Regular, Avenir Next" font-size="14" font-weight="normal" fill="#000000">
+            <tspan x="17.763" y="80">Развернутая длина  </tspan>
+        </text>
+        <text id="Эксплуатационная-дли" font-family="AvenirNext-Regular, Avenir Next" font-size="14" font-weight="normal" fill="#000000">
+            <tspan x="17.676" y="32">Эксплуатационная длина  </tspan>
+        </text>
+        <line x1="0" y1="50" x2="320" y2="50" id="Path-141" stroke="#B3BDC7"></line>
+        <line x1="0" y1="100" x2="320" y2="100" id="Path-141" stroke="#B3BDC7"></line>
+        <line x1="0" y1="150" x2="320" y2="150" id="Path-141" stroke="#B3BDC7"></line>
+        <line x1="0" y1="200" x2="320" y2="200" id="Path-141" stroke="#B3BDC7"></line>
+        <line x1="0" y1="250" x2="320" y2="250" id="Path-141" stroke="#B3BDC7"></line>
+        <text id="2188,4-км" font-family="AvenirNext-Regular, Avenir Next" font-size="14" font-weight="normal" fill="#000000">
+            <tspan x="237.464" y="32">2188,4 км</tspan>
+        </text>
+        <line x1="226.5" y1="299.5" x2="226.5" y2="-0.5" id="Path-141" stroke="#B3BDC7"></line>
+    </g>
+</svg>

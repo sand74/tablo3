@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320px" height="380px" viewBox="0 0 320 380" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>petrozavodsk_legend</title>
+    <g id="petrozavodsk_legend" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#B3BDC7" stroke-width="3" fill="#FFFFFF" x="1.5" y="1.5" width="317" height="377" rx="8"></rect>
+        <g id="Group-6" transform="translate(24.000000, 348.000000)">
+            <text id="Электрификация-посто" font-family="AvenirNext-Regular, Avenir Next" font-size="12" font-weight="normal" fill="#6D7C8A">
+                <tspan x="42.228" y="12">Электрификация постоянным током</tspan>
+            </text>
+            <line x1="6.39488462e-13" y1="8" x2="35" y2="8" id="Path-7" stroke="#FF8787" stroke-width="4"></line>
+        </g>
+        <g id="Group-6" transform="translate(24.000000, 327.000000)">
+            <text id="Электрификация-перем" font-family="AvenirNext-Regular, Avenir Next" font-size="12" font-weight="normal" fill="#6D7C8A">
+                <tspan x="42.104" y="12">Электрификация переменным током</tspan>
+            </text>
+            <line x1="6.39488462e-13" y1="8" x2="35" y2="8" id="Path-7" stroke="#FF8787" stroke-width="4" stroke-dasharray="6,5"></line>
+        </g>
+        <g id="Group-5" transform="translate(23.000000, 300.000000)">
+            <text id="Двухпутный-участок-п" font-family="AvenirNext-Regular, Avenir Next" font-size="16" font-weight="normal" fill="#6D7C8A">
+                <tspan x="43.92" y="16">Двухпутный участок пути</tspan>
+            </text>
+            <g id="Group" transform="translate(0.000000, 4.000000)">
+                <line x1="36" y1="6" x2="0" y2="5.75" id="Path-5" stroke="#B6EFAC" stroke-width="12"></line>
+                <line x1="36" y1="1" x2="1.13686838e-13" y2="1" id="Path-13" stroke="#7DB574" stroke-width="3"></line>
+            </g>
+        </g>
+        <g id="Group-3" transform="translate(23.000000, 278.000000)">
+            <text id="Однопутный-участок-п" font-family="AvenirNext-Regular, Avenir Next" font-size="16" font-weight="normal" fill="#6D7C8A">
+                <tspan x="42.692" y="16">Однопутный участок пути</tspan>
+            </text>
+            <line x1="36" y1="11" x2="0" y2="11" id="Path-5" stroke="#B6EFAC" stroke-width="12"></line>
+        </g>
+        <g id="Group-4" transform="translate(23.000000, 45.000000)">
+            <g id="st_" transform="translate(1.000000, 33.000000)">
+                <text id="Станция-1-класса" font-family="AvenirNext-Regular, Avenir Next" font-size="24" font-weight="normal" fill="#6D7C8A">
+                    <tspan x="33.116" y="24">Станция 1 класса</tspan>
+                </text>
+                <g id="st" transform="translate(0.000000, 5.000000)" fill="#FFFDFD" stroke="#6EA8F0" stroke-width="4">
+                    <circle id="Oval" cx="12" cy="12" r="10"></circle>
+                </g>
+            </g>
+            <g id="st_" transform="translate(3.000000, 66.000000)">
+                <g id="st" transform="translate(0.000000, 4.000000)" fill="#FFFDFD" stroke="#6EA8F0" stroke-width="2">
+                    <circle id="Oval" cx="9" cy="9" r="8"></circle>
+                </g>
+                <text id="Станция-2-класса" font-family="AvenirNext-Regular, Avenir Next" font-size="18" font-weight="normal" fill="#6D7C8A">
+                    <tspan x="32.087" y="18">Станция 2 класса</tspan>
+                </text>
+            </g>
+            <g id="st_" transform="translate(6.000000, 91.000000)">
+                <g id="st" transform="translate(0.000000, 4.000000)" fill="#FFFDFD" stroke="#A3A3A3" stroke-width="2">
+                    <circle id="Oval" cx="6.5" cy="6.5" r="5.5"></circle>
+                </g>
+                <text id="Станция-3-класса" font-family="AvenirNext-Regular, Avenir Next" font-size="16" font-weight="normal" fill="#6D7C8A">
+                    <tspan x="30.244" y="16">Станция 3 класса</tspan>
+                </text>
+            </g>
+            <g id="st_" transform="translate(8.000000, 113.000000)">
+                <g id="st" transform="translate(0.000000, 3.000000)" fill="#FFFFFF" stroke="#C3C1C1">
+                    <circle id="Oval" transform="translate(5.000000, 5.000000) scale(-1, 1) translate(-5.000000, -5.000000) " cx="5" cy="5" r="4.5"></circle>
+                </g>
+                <text id="Станция-4-класса" font-family="AvenirNext-Regular, Avenir Next" font-size="12" font-weight="normal" fill="#6D7C8A">
+                    <tspan x="29.058" y="12">Станция 4 класса </tspan>
+                </text>
+            </g>
+            <g id="st_" opacity="0.5023484" transform="translate(8.000000, 129.000000)">
+                <g id="st" transform="translate(0.000000, 3.000000)" fill="#FFFFFF" stroke="#C3C1C1">
+                    <circle id="Oval" transform="translate(5.000000, 5.000000) scale(-1, 1) translate(-5.000000, -5.000000) " cx="5" cy="5" r="4.5"></circle>
+                </g>
+                <text id="Станция-5-класса" font-family="AvenirNext-Regular, Avenir Next" font-size="12" font-weight="normal" fill="#6D7C8A">
+                    <tspan x="29.058" y="12">Станция 5 класса</tspan>
+                </text>
+            </g>
+            <g id="st_">
+                <text id="Внеклассная-станция" font-family="AvenirNext-Regular, Avenir Next" font-size="24" font-weight="normal" fill="#6D7C8A">
+                    <tspan x="34.452" y="24">Внеклассная станция</tspan>
+                </text>
+                <g id="st" transform="translate(0.000000, 4.000000)">
+                    <circle id="Oval" stroke="#6EA8F0" stroke-width="2" fill="#FFFDFD" cx="13" cy="13" r="12"></circle>
+                    <circle id="Oval" fill="#6EA8F0" cx="13" cy="13" r="8"></circle>
+                </g>
+            </g>
+            <g id="Group-2" transform="translate(5.000000, 145.000000)">
+                <rect id="Rectangle" stroke="#5AC237" fill="#93FA6F" transform="translate(9.000000, 11.000000) rotate(-45.000000) translate(-9.000000, -11.000000) " x="3.5" y="5.5" width="11" height="11" rx="2"></rect>
+                <text id="Пассажирская-станция" font-family="AvenirNext-Regular, Avenir Next" font-size="16" font-weight="normal" fill="#6D7C8A">
+                    <tspan x="31.052" y="16">Пассажирская станция</tspan>
+                </text>
+            </g>
+            <g id="st_" transform="translate(7.000000, 170.000000)">
+                <text id="Иностранная-станция" font-family="AvenirNext-Italic, Avenir Next" font-size="14" font-style="italic" font-weight="normal" fill="#A0A0A0">
+                    <tspan x="29.633" y="14">Иностранная станция</tspan>
+                </text>
+                <g id="st" transform="translate(0.000000, 2.000000)" fill="#C5C5C5">
+                    <circle id="Oval" cx="7" cy="7" r="7"></circle>
+                </g>
+            </g>
+            <g id="zd_vkz" transform="translate(5.000000, 191.000000)" fill="#404040">
+                <path d="M10.6798057,0.264315457 L12.3766671,1.82656854 C12.7879889,2.20526108 13.0220184,2.73883689 13.0220184,3.29793764 L13.0220184,14.9933461 L7,14.9933461 L7,3.29359496 C7,2.73703051 7.23191819,2.20563783 7.63999729,1.82717325 L9.32248006,0.266789152 C9.70500601,-0.0879766825 10.2959892,-0.0890537361 10.6798057,0.264315457 Z M10,3.98481839 C8.8954305,3.98481839 8,4.88024889 8,5.98481839 C8,7.08938789 8.8954305,7.98481839 10,7.98481839 C11.1045695,7.98481839 12,7.08938789 12,5.98481839 C12,4.88024889 11.1045695,3.98481839 10,3.98481839 Z" id="Combined-Shape"></path>
+                <path d="M16.3562457,8.99334606 C16.739333,8.99334606 17.1143609,9.10336797 17.4367323,9.31032831 L19.0804866,10.365608 C19.6535218,10.7334929 20,11.3676641 20,12.0486257 L20,20.9933461 L0,20.9933461 L0,12.0353069 C-3.04544406e-16,11.3616449 0.339140459,10.7332447 0.90225965,10.3634917 L2.48912491,9.32153085 C2.81520297,9.10742283 3.19677663,8.99334606 3.58686526,8.99334606 L16.3562457,8.99334606 Z M2.33879185,15.9848184 C1.44626395,15.9848184 1,16.5029077 1,17.5390864 L1,17.5390864 L1,19.9848184 L3.67758369,19.9848184 L3.67758369,17.5390864 C3.67758369,16.5029077 3.23131974,15.9848184 2.33879185,15.9848184 Z M17.6587918,15.9848184 C16.7662639,15.9848184 16.32,16.5029077 16.32,17.5390864 L16.32,17.5390864 L16.32,19.9848184 L18.9975837,19.9848184 L18.9975837,17.5390864 C18.9975837,16.5029077 18.5513197,15.9848184 17.6587918,15.9848184 Z M6.16879185,15.9848184 C5.27626395,15.9848184 4.83,16.5029077 4.83,17.5390864 L4.83,17.5390864 L4.83,19.9848184 L7.50758369,19.9848184 L7.50758369,17.5390864 C7.50758369,16.5029077 7.06131974,15.9848184 6.16879185,15.9848184 Z M13.8287918,15.9848184 C12.9362639,15.9848184 12.49,16.5029077 12.49,17.5390864 L12.49,17.5390864 L12.49,19.9848184 L15.1675837,19.9848184 L15.1675837,17.5390864 C15.1675837,16.5029077 14.7213197,15.9848184 13.8287918,15.9848184 Z M9.99879185,15.9848184 C9.10626395,15.9848184 8.66,16.5029077 8.66,17.5390864 L8.66,17.5390864 L8.66,19.9848184 L11.3375837,19.9848184 L11.3375837,17.5390864 C11.3375837,16.5029077 10.8913197,15.9848184 9.99879185,15.9848184 Z" id="Combined-Shape"></path>
+            </g>
+            <text id="Вокзал" font-family="AvenirNext-Regular, Avenir Next" font-size="16" font-weight="normal" fill="#6D7C8A">
+                <tspan x="37.228" y="208">Вокзал</tspan>
+            </text>
+        </g>
+        <text id="Обозначения" font-family="AvenirNext-DemiBold, Avenir Next" font-size="22" font-weight="500" fill="#6D7C8A">
+            <tspan x="87.394" y="36">Обозначения</tspan>
+        </text>
+        <line x1="233" y1="269.5" x2="71" y2="269.5" id="Path-140" stroke="#D9D7D7"></line>
+    </g>
+</svg>

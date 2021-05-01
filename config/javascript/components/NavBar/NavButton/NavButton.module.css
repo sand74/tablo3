@@ -1,0 +1,75 @@
+/* Цвета кнопок */
+.bgBlue {
+  background: rgb(198, 217, 241);
+}
+
+.bgViolet {
+  background: rgb(204, 193, 218);
+}
+
+.bgGrey {
+  background: rgb(210, 210, 210);
+}
+
+.bgRed {
+  background: rgb(248, 125, 125);
+}
+
+/* Изменение цвета кнопок при наведении*/
+.bgBlue:hover {
+  background: rgb(148, 167, 191);
+}
+
+.bgViolet:hover {
+  background: rgb(154, 143, 168);
+}
+
+.bgGrey:hover {
+  background: rgb(131, 131, 131);
+}
+
+.bgRed:hover {
+  background: rgb(198, 75, 75);
+}
+
+/* ссылки в виде кнопок */
+.link {
+  cursor: default;
+  min-height: 15px;
+  max-height: 40px;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 0.8em;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 5vh;
+}
+/* кнопка не активна*/
+
+.disabled {
+  cursor: default;
+  min-height: 15px;
+  max-height: 40px;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 0.8em;
+  color: #979797;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 5vh;
+  background: #cccccc;
+}
+
+/* Линия разделения */
+.spaceline {
+  margin: 15px;
+}
+
+/* изменение цвета текста кнопки при наведении  */
+
+.link:hover {
+  color: white;
+}

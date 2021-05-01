@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="250px" height="324px" viewBox="0 0 250 324" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>city_legend</title>
+    <g id="city_legend" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#B3BDC7" stroke-width="3" fill="#FFFFFF" x="1.5" y="1.5" width="247" height="321" rx="8"></rect>
+        <text id="Пути-без-электрифика" font-family="AvenirNext-Regular, Avenir Next" font-size="14" font-weight="normal" fill="#B1B1B1">
+            <tspan x="60.54" y="275">Пути без электрификации</tspan>
+        </text>
+        <text id="Станция-сортировочна" font-family="AvenirNext-Regular, Avenir Next" font-size="14" font-weight="normal" fill="#B1B1B1">
+            <tspan x="57.851" y="249"> Станция сортировочная</tspan>
+        </text>
+        <polygon id="Path-95" stroke="#58A7FF" stroke-width="2" fill="#FFFFFF" transform="translate(29.648438, 249.101563) rotate(-90.000000) translate(-29.648438, -249.101563) " points="34.1484375 233.351563 34.1484375 264.851563 25.1484375 256.561015 25.1484375 241.055891"></polygon>
+        <polygon id="Path-95" stroke="#58A7FF" stroke-width="2" fill="#FFFFFF" transform="translate(29.648438, 239.101562) scale(-1, 1) rotate(90.000000) translate(-29.648438, -239.101562) " points="34.1484375 223.351562 34.1484375 254.851562 25.1484375 246.561015 25.1484375 231.055891"></polygon>
+        <text id="Порт" font-family="AvenirNext-Regular, Avenir Next" font-size="14" font-weight="normal" fill="#B1B1B1">
+            <tspan x="61.375" y="308">Порт</tspan>
+        </text>
+        <text id="Станции-4-класса" font-family="AvenirNext-Regular, Avenir Next" font-size="12" font-weight="normal" fill="#B1B1B1">
+            <tspan x="61.198" y="203">Станции 4 класса</tspan>
+        </text>
+        <text id="Внеклассные-станции" font-family="AvenirNext-Medium, Avenir Next" font-size="16" font-weight="400" fill="#B1B1B1">
+            <tspan x="59.512" y="90">Внеклассные станции</tspan>
+        </text>
+        <text id="Обозначения" font-family="AvenirNext-Medium, Avenir Next" font-size="18" font-weight="400" fill="#A1A1A1">
+            <tspan x="66.212" y="27">Обозначения</tspan>
+        </text>
+        <text id="Станции-1-класса" font-family="AvenirNext-Regular, Avenir Next" font-size="16" font-weight="normal" fill="#B1B1B1">
+            <tspan x="54.764" y="124"> Станции 1 класса</tspan>
+        </text>
+        <text id="Станции-3-класса" font-family="AvenirNext-Regular, Avenir Next" font-size="14" font-weight="normal" fill="#B1B1B1">
+            <tspan x="60.481" y="180">Станции 3 класса</tspan>
+        </text>
+        <text id="Пассажирские-станции" font-family="AvenirNext-Regular, Avenir Next" font-size="16" font-weight="normal" fill="#B1B1B1">
+            <tspan x="59.288" y="55">Пассажирские станции</tspan>
+        </text>
+        <g id="Group" transform="translate(21.000000, 294.000000)">
+            <circle id="Oval" stroke="#87B6E0" fill="#FFFFFF" cx="9" cy="9" r="8.5"></circle>
+            <path d="M8.99942876,2.45454545 C9.7017346,2.45454545 10.271066,3.01587983 10.271066,3.70832087 C10.271066,4.20074938 9.98313665,4.626873 9.56421417,4.83195995 L9.59078974,5.66276574 L11.628042,5.66276574 L11.628042,6.60035466 L9.664803,6.60035466 L9.74174698,10.6564651 C9.78345602,11.088087 9.83753372,11.4024043 9.90398008,11.5994168 C9.97042643,11.7964293 10.0604428,11.9704478 10.1740291,12.1214722 C10.3462797,12.3167543 10.5279433,12.4365976 10.7190201,12.4810021 C10.9100968,12.5254067 11.1551767,12.48772 11.4542598,12.367942 C11.7395367,12.1823496 11.945027,12.022779 12.0707307,11.8892299 C12.1964344,11.7556809 12.3411162,11.5432248 12.5047762,11.2518615 L12.5047762,11.2518615 L11.8963276,11.2518615 C12.1820824,10.8549988 12.3848986,10.5343881 12.5047762,10.2900296 C12.6246539,10.0456711 12.7589374,9.67913766 12.9076269,9.19042939 C13.3081386,9.80414492 13.5655292,10.2649727 13.6797988,10.5729127 C13.7940684,10.8808527 13.8704991,11.3196251 13.9090909,11.8892299 L13.9090909,11.8892299 L13.3117691,11.5238719 C13.1207586,12.0739496 12.851761,12.5486701 12.5047762,12.9480335 C12.1577915,13.3473969 11.5885517,13.7229744 10.7970569,14.0747662 C10.2947344,14.2524842 9.94296447,14.4236539 9.74174698,14.5882754 C9.5405295,14.7528969 9.29309009,15.0719566 8.99942876,15.5454545 L8.99942876,15.5454545 L8.99890909,15.5415455 L8.8926149,15.3736383 C8.64577228,14.993111 8.43431832,14.7308254 8.25825302,14.5867816 C8.05703553,14.4221601 7.70526557,14.2509904 7.20294314,14.0732724 C6.41144832,13.7214807 5.84220853,13.3459031 5.49522377,12.9465397 C5.14823901,12.5471763 4.87924138,12.0724558 4.68823087,11.5223782 L4.09090909,11.8877362 C4.1295009,11.3181313 4.20593159,10.8793589 4.32020118,10.5714189 C4.43447076,10.2634789 4.69186139,9.80265116 5.09237307,9.18893563 C5.24106256,9.67764391 5.37534613,10.0441773 5.49522377,10.2885358 C5.61510141,10.5328944 5.81791762,10.853505 6.10367238,11.2503677 L5.49522377,11.2503677 C5.65888378,11.541731 5.80356563,11.7541872 5.92926932,11.8877362 C6.05497301,12.0212852 6.26046329,12.1808559 6.54574017,12.3664482 C6.84482328,12.4862262 7.08990321,12.5239129 7.28097994,12.4795084 C7.47205668,12.4351038 7.65372033,12.3152605 7.82597087,12.1199785 C7.93955722,11.9689541 8.02957357,11.7949356 8.09601992,11.5979231 C8.16246628,11.4009105 8.21654398,11.0865933 8.25825302,10.6549713 L8.335197,6.59886091 L6.37195803,6.59886091 L6.37195803,5.66127198 L8.40921026,5.66127198 L8.43563866,4.83244667 C8.01617699,4.62754774 7.72779154,4.20113927 7.72779154,3.70832087 C7.72779154,3.01587983 8.29712291,2.45454545 8.99942876,2.45454545 Z" id="Combined-Shape" fill="#87B6E0" transform="translate(9.000000, 9.000000) scale(-1, 1) translate(-9.000000, -9.000000) "></path>
+        </g>
+        <circle id="Oval" stroke="#58A7FF" stroke-width="4" fill="#FFFFFF" cx="29.5" cy="120.5" r="10.5"></circle>
+        <circle id="Oval" stroke="#58A7FF" stroke-width="4" fill="#FFFFFF" cx="29.5" cy="86.5" r="13.5"></circle>
+        <circle id="Oval" fill="#58A7FF" cx="29.5" cy="86.5" r="8.5"></circle>
+        <circle id="Oval" stroke="#58A7FF" stroke-width="2" fill="#FFFFFF" cx="29" cy="150" r="9"></circle>
+        <circle id="Oval" stroke="#8E8E8E" stroke-width="3" fill="#FFFFFF" cx="28.5" cy="175.5" r="7"></circle>
+        <circle id="Oval" stroke="#8E8E8E" fill="#FFFFFF" cx="29" cy="199" r="5.5"></circle>
+        <circle id="Oval" stroke="#DADADA" fill="#FFFFFF" cx="29" cy="220" r="5.5"></circle>
+        <text id="Станции-5-класса" font-family="AvenirNext-Regular, Avenir Next" font-size="12" font-weight="normal" fill="#B1B1B1">
+            <tspan x="61.198" y="224">Станции 5 класса</tspan>
+        </text>
+        <rect id="Rectangle" stroke="#7FD363" stroke-width="3" fill="#9DEE81" transform="translate(29.500000, 50.500000) rotate(-45.000000) translate(-29.500000, -50.500000) " x="17.5" y="38.5" width="24" height="24" rx="8"></rect>
+        <text id="Станции-2-класса" font-family="AvenirNext-Regular, Avenir Next" font-size="14" font-weight="normal" fill="#B1B1B1">
+            <tspan x="57.231" y="154"> Станции 2 класса</tspan>
+        </text>
+        <line x1="49" y1="271" x2="13" y2="271" id="ne3" stroke="#747474" stroke-width="2" stroke-linecap="round" stroke-dasharray="12,5"></line>
+        <line x1="73" y1="288" x2="176.5" y2="288" id="Path-79" stroke="#F4F4F4"></line>
+    </g>
+</svg>

@@ -1,0 +1,148 @@
+{
+  "left_box": [
+    {
+      "id": 16,
+      "name": "История железной дороги",
+      "path": "http://web-ozd.orw.oao.rzd/merp40/map_ozd/orw_tablo/orw_tablo_history.php",
+      "order_num": 2,
+      "style": "bg-blue",
+      "disabled": "false"
+    },
+    {
+      "id": 17,
+      "name": "Показатели деятельности",
+      "path": "http://web-ozd.orw.oao.rzd/merp40/map_ozd/orw_tablo/orw_tablo_work_evaluations.php",
+      "order_num": 3,
+      "style": "bg-blue",
+      "disabled": "true"
+    },
+    {
+      "id": 2,
+      "name": "Отчетность Н",
+      "path": "http://web-ozd.orw.oao.rzd/merp40/map_ozd/orw_tablo/orw_tablo_n.php",
+      "order_num": 4,
+      "style": "bg-violet",
+      "disabled": "true"
+    },
+    {
+      "id": 308,
+      "name": "Поездное положение",
+      "path": "http://tep-01.orw.oao.rzd:777/trains1/hot.asp",
+      "order_num": 5,
+      "style": "bg-violet",
+      "disabled": "false"
+    },
+    {
+      "id": 12,
+      "name": "Отчетность  НЗ-1",
+      "path": "http://web-ozd.orw.oao.rzd/merp40/map_ozd/orw_tablo/orw_tablo_nz1.php",
+      "order_num": 6,
+      "style": "bg-violet",
+      "disabled": "true"
+    },
+    {
+      "id": 18,
+      "name": "Безопасность движения",
+      "path": "http://web-ozd.orw.oao.rzd/merp40/map_ozd/orw_tablo/orw_tablo_razdel.php?razdel=18",
+      "order_num": 7,
+      "style": "bg-blue",
+      "disabled": "false"
+    },
+    {
+      "id": 19,
+      "name": "Безопасность процессов",
+      "path": "http://web-ozd.orw.oao.rzd/merp40/map_ozd/orw_tablo/orw_tablo_razdel.php?razdel=19",
+      "order_num": 8,
+      "style": "bg-blue",
+      "disabled": "false"
+    },
+    {
+      "id": 25,
+      "name": "Управление персоналом",
+      "path": "http://web-ozd.orw.oao.rzd/merp40/map_ozd/orw_tablo/orw_tablo_razdel.php?razdel=25",
+      "order_num": 9,
+      "style": "bg-blue",
+      "disabled": "false"
+    },
+    {
+      "id": 32,
+      "name": "ОТС и ТН",
+      "path": "http://web-ozd.orw.oao.rzd/merp40/map_ozd/orw_tablo/orw_tablo_razdel.php?razdel=32",
+      "order_num": 10,
+      "style": "bg-blue",
+      "disabled": "true"
+    },
+    {
+      "id": 29,
+      "name": "Грузовые перевозки",
+      "path": "http://web-ozd.orw.oao.rzd/merp40/map_ozd/orw_tablo/orw_tablo_razdel.php?razdel=29",
+      "order_num": 11,
+      "style": "bg-blue",
+      "disabled": "true"
+    },
+    {
+      "id": 27,
+      "name": "Пассажирские перевозки",
+      "path": "http://web-ozd.orw.oao.rzd/merp40/map_ozd/orw_tablo/orw_tablo_razdel.php?razdel=27",
+      "order_num": 12,
+      "style": "bg-blue",
+      "disabled": "true"
+    },
+    {
+      "id": 30,
+      "name": "Инфраструктура",
+      "path": "http://web-ozd.orw.oao.rzd/merp40/map_ozd/orw_tablo/orw_tablo_razdel.php?razdel=30",
+      "order_num": 13,
+      "style": "bg-blue",
+      "disabled": "true"
+    },
+    {
+      "id": 33,
+      "name": "Локомотивный комплекс",
+      "path": "http://web-ozd.orw.oao.rzd/merp40/map_ozd/orw_tablo/orw_tablo_razdel.php?razdel=33",
+      "order_num": 14,
+      "style": "bg-blue",
+      "disabled": "true"
+    },
+    {
+      "id": 28,
+      "name": "Инновационная деятельность",
+      "path": "http://web-ozd.orw.oao.rzd/merp40/map_ozd/orw_tablo/orw_tablo_razdel.php?razdel=28",
+      "order_num": 15,
+      "style": "bg-blue",
+      "disabled": "false"
+    },
+    {
+      "id": 31,
+      "name": "Рейтинговая оценка",
+      "path": "http://web-ozd.orw.oao.rzd/merp40/map_ozd/orw_tablo/orw_tablo_razdel.php?razdel=31",
+      "order_num": 16,
+      "style": "bg-blue",
+      "disabled": "false"
+    },
+    {
+      "id": 34,
+      "name": "Полезная информация",
+      "path": "http://web-ozd.orw.oao.rzd/merp40/map_ozd/orw_tablo/orw_tablo_razdel.php?razdel=34",
+      "order_num": 17,
+      "style": "bg-blue",
+      "disabled": "false"
+    },
+    {
+      "id": 15,
+      "name": "Новости табло",
+      "path": "http://web-ozd.orw.oao.rzd/merp40/map_ozd/orw_tablo/orw_tablo_news.php",
+      "order_num": 18,
+      "style": "bg-grey",
+      "disabled": "false"
+    },
+    {
+      "id": null,
+      "name": "Выход",
+      "path": "./orw_tablo.php?exit_user",
+      "order_num": 19,
+      "style": "bg-red",
+      "disabled": "false"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>night</title>
+    <g id="night" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="#616161" x="0" y="0" width="64" height="64" rx="11"></rect>
+        <polygon id="Rectangle" fill="#FFFFFF" transform="translate(49.078191, 21.107114) rotate(44.000000) translate(-49.078191, -21.107114) " points="42.4464211 14 49.9257938 18.1313877 56.1563825 14.5435688 52.6382855 20.940255 55.9281527 27.9607417 49.2330827 24.2286212 42 28.2142285 46.520591 21.4197539"></polygon>
+        <path d="M22,25.7020342 C22,36.1954445 30.5065898,44.7020342 41,44.7020342 C44.2868559,44.7020342 47.3787783,43.8674243 50.075401,42.3985707 C46.690309,49.6566281 39.1983921,54.7020342 30.5,54.7020342 C18.6258779,54.7020342 9,45.300014 9,33.7020342 C9,23.3126322 16.7242578,14.6853715 26.8695282,13.000166 C23.8423306,16.3655249 22,20.8186299 22,25.7020342 Z" id="Combined-Shape" fill="#FFD955"></path>
+    </g>
+</svg>

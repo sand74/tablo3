@@ -1,0 +1,11 @@
+.NavBar {
+  padding: 5px;
+  /*font-family: 'Verdana', Helvetica, sans-serif;*/
+  font-family: "Times New Roman", Helvetica, serif;
+  font-size: 1.3em;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  overflow-y: hidden;
+}

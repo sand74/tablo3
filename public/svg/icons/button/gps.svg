@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>zoom</title>
+    <g id="zoom" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" stroke="#808080" stroke-width="6" cx="32" cy="32" r="28"></circle>
+        <circle id="Oval" stroke="#808080" stroke-width="6" cx="32" cy="32" r="17"></circle>
+        <circle id="Oval" stroke="#808080" stroke-width="6" cx="32" cy="32" r="6"></circle>
+        <g id="plus" transform="translate(-1.000000, -1.000000)" stroke="#808080" stroke-width="6">
+            <line x1="33.2222222" y1="0.277777778" x2="33.2222222" y2="65" id="Path-155"></line>
+            <line x1="0" y1="33" x2="66.4444444" y2="33" id="Path-155"></line>
+        </g>
+    </g>
+</svg>

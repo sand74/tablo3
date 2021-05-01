@@ -1,0 +1,14 @@
+.ToggleMapButton {
+  max-width: 250px;
+  max-height: 170px;
+  width: 100%;
+  height: 100%;
+  /* border: 2px solid #b3bdc7;
+  border-radius: 7px;
+  background-color: #ffffff; */
+  padding: 3px;
+}
+
+.ToggleMapButton img {
+  cursor: pointer;
+}

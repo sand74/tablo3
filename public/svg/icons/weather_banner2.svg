@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="55px" height="46px" viewBox="0 0 55 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 30</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-30">
+            <path d="M8.1627907,0.5 C7.08711982,0.5 6.11328261,0.93600177 5.40836312,1.64092126 C4.70344363,2.34584075 4.26744186,3.31967796 4.26744186,4.39534884 L4.2667527,30.545445 C2.01214971,31.879451 0.5,34.3357678 0.5,37.1453658 C0.5,39.261387 1.35768706,41.1770847 2.74437943,42.5637771 C4.1310718,43.9504694 6.04676948,44.8081565 8.1627907,44.8081565 C9.75016242,44.8081565 11.2248656,44.3256177 12.4479933,43.4989494 C13.7993268,42.5856315 14.8438639,41.2526929 15.3941719,39.686943 L47.7906838,39.6860465 C48.4810536,39.6860465 49.1060536,39.4062245 49.5584646,38.9538135 C50.0108756,38.5014024 50.2906977,37.8764024 50.2906977,37.1860465 L50.2906977,8.02325581 C50.2906977,7.33289988 50.0108756,6.70789988 49.5584646,6.25548886 C49.1060536,5.80307785 48.4810536,5.52325581 47.7906977,5.52325581 L12.0578888,5.52299637 L12.0581395,4.39523768 C12.0581395,3.31967796 11.6221378,2.34584075 10.9172183,1.64092126 C10.2122988,0.93600177 9.23846158,0.5 8.1627907,0.5 Z" id="Combined-Shape" stroke="#6B6969" fill="#FFFFFF"></path>
+            <circle id="Oval" fill="#2A88F7" cx="8" cy="37.3139535" r="4.5"></circle>
+            <line x1="8.2" y1="22.8419554" x2="8.2" y2="5.20930233" id="Path-105" stroke="#ED3E3E" stroke-width="3" stroke-linecap="round"></line>
+            <line x1="8.2" y1="38.4698624" x2="8.2" y2="23.4418605" id="Path-105" stroke="#2A88F7" stroke-width="3" stroke-linecap="square"></line>
+            <text id="temp" font-family="AvenirNext-Medium, Avenir Next" font-size="9" font-weight="400" fill="#3D3D3D">
+                <tspan x="16" y="16">-12 C</tspan>
+            </text>
+            <text id="visib" font-family="AvenirNext-Medium, Avenir Next" font-size="9" font-weight="400" fill="#3D3D3D">
+                <tspan x="16.0697674" y="36">10 км</tspan>
+            </text>
+            <text id="wind" font-family="AvenirNext-Medium, Avenir Next" font-size="9" font-weight="400" fill="#3D3D3D">
+                <tspan x="16" y="26">5 м/с</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,89 @@
+.fixed_header {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.fixed_header tbody {
+  display: block;
+  overflow-y: scroll;
+  height: 21em;
+  width: 100%;
+}
+
+.fixed_header thead {
+  /* background: black;
+  color:#fff; */
+  display: block;
+  width: 100%;
+}
+
+.fixed_header tr {
+  width: 100%;
+}
+
+.fixed_header th,
+.fixed_header td {
+  padding: 10px;
+}
+
+.tname {
+  width: 60em;
+  text-align: left;
+}
+.thfact {
+  width: 10em;
+  text-align: center;
+}
+
+.tfact {
+  width: 9.5em;
+  text-align: right;
+}
+
+.table-hover tbody tr:hover {
+  background: rgb(188, 215, 233);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* virtual Link  */
+.vlink {
+  color: blue;
+  text-decoration: underline;
+}
+
+.vlink:hover {
+  cursor: pointer;
+}
+
+.scroll-table {
+  height: 25rem;
+  overflow-y: auto;
+}
+
+.scroll-table td {
+  font-size: 0.9em;
+  padding: 1em;
+}
+.scroll-table td p {
+  margin-bottom: 0.1em;
+}

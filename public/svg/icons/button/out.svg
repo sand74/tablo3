@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>out</title>
+    <desc>Created with Sketch.</desc>
+    <g id="out" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" stroke="#808080" stroke-width="6" cx="27" cy="27" r="23"></circle>
+        <line x1="60" y1="60" x2="44" y2="44" id="Path-156" stroke="#808080" stroke-width="9"></line>
+        <line x1="14" y1="27" x2="40" y2="27" id="Path-155" stroke="#808080" stroke-width="6"></line>
+    </g>
+</svg>

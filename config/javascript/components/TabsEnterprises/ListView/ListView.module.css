@@ -1,0 +1,20 @@
+.ListView {
+  border: 1 solid black;
+}
+.header {
+  font-size: 1em;
+  font-weight: bold;
+  padding: 1em;
+  padding-left: 2em;
+}
+.scrollTable {
+  height: 21.5rem;
+  overflow-y: auto;
+}
+.scrollTable td {
+  font-size: 0.9em;
+  padding: 1em;
+}
+.scrollTable td p {
+  margin-bottom: 0.5em;
+}

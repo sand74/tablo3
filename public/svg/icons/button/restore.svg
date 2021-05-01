@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>restore</title>
+    <desc>Created with Sketch.</desc>
+    <g id="restore" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M38,26 L55,9 L38,26 Z" id="Path-157" stroke="#808080" stroke-width="5"></path>
+        <polyline id="Path-158" stroke="#808080" stroke-width="5" transform="translate(43.500000, 20.500000) rotate(-180.000000) translate(-43.500000, -20.500000) " points="51 28 51 13 36 13.0880561"></polyline>
+        <path d="M9,55 L26,38 L9,55 Z" id="Path-157" stroke="#808080" stroke-width="5" transform="translate(17.500000, 46.500000) scale(-1, -1) translate(-17.500000, -46.500000) "></path>
+        <polyline id="Path-158" stroke="#808080" stroke-width="5" transform="translate(20.500000, 43.500000) scale(-1, -1) rotate(-180.000000) translate(-20.500000, -43.500000) " points="28 51 28 36 13 36.0880561"></polyline>
+    </g>
+</svg>
