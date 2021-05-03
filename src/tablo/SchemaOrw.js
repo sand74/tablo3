@@ -1,12 +1,12 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {TransformComponent, TransformWrapper} from "react-zoom-pan-pinch";
 import {makeStyles} from "@material-ui/core/styles";
 import {ZoomIn, ZoomOut, ZoomOutMap} from '@material-ui/icons';
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
-import SchemaOrwSvg from '/public/svg/tablo.svg';
-import LegendSvg from '/public/svg/legend.svg';
-import SvgView from "./components/SvgView";
+import {getSchema} from './Schemas';
+import SvgView from "./SvgView";
+import * as d3 from "d3";
 
 const icons = {
     zoomIn: "./svg/icons/button/zoom.svg",
@@ -77,8 +77,138 @@ const styleButtonZoom = {
 const SchemaOrw = (props) => {
     const classes = useStyles();
 
-    const HandleOnClick = (event) => {
-        console.log('event', event.type);
+    const [schemaDesc, setSchemaDesc] = useState(() => {
+        return getSchema('orw');
+    });
+
+    const [schemaSvg, setSchemaSvg] = useState();
+    const [legendSvg, setLegendSvg] = useState();
+    const [tableSvg, setTableSvg] = useState();
+
+    useEffect(() => {
+        if(!schemaDesc.schema) {
+            let box = document.querySelector('#schema');
+            if(box && schemaSvg) {
+                box.removeChild(schemaSvg);
+            }
+            setSchemaSvg(undefined);
+            return;
+        }
+        d3.xml(schemaDesc.schema).then((xml) => {
+            let box = document.querySelector('#schema');
+            if (box) {
+                if (schemaSvg) {
+                    box.removeChild(schemaSvg);
+                }
+
+                let doc = xml.documentElement;
+                doc.setAttribute("preserveAspectRatio", "xMidYMin");
+                doc.setAttribute("height", "100%");
+                doc.setAttribute("width", "100%");
+                let svg = d3.select(doc);
+
+                svg.select("#buttons").selectAll("g").on('click', function (event) {
+                    handleClickRegion(event, d3.select(this));
+                });
+                svg.select("#buttons").selectAll("g").on("mouseenter", function (event) {
+                    d3.select(this).selectAll("rect").attr("fill-opacity", "1");
+                });
+                svg.select("#buttons").selectAll("g").on("mouseleave", function (event) {
+                    d3.select(this).selectAll("rect").attr("fill-opacity", "0.35");
+                });
+
+                svg.select("#close_button").on("click", function(event) {
+                    handleCloseButton(event, d3.select(this));
+                });
+                svg.select("#close_button").on("mouseenter", function(event) {
+                    d3.select(this).attr("opacity", "0.98");
+                });
+                svg.select("#close_button").on("mouseleave", function(event) {
+                    d3.select(this).attr("opacity", "0.595982143");
+                });
+
+                svg.selectAll("#go_region").selectAll("*").on('click', function (event) {
+                    handleClickRegion(event, d3.select(this));
+                });
+
+                box.appendChild(svg.node());
+                setSchemaSvg(svg.node());
+            }
+        });
+    }, [schemaDesc.schema]);
+
+    useEffect(() => {
+        if(!schemaDesc.legend) {
+            let box = document.querySelector('#schema_legend');
+            if(box && legendSvg) {
+                box.removeChild(legendSvg);
+            }
+            setLegendSvg(undefined);
+            return;
+        }
+        d3.xml(schemaDesc.legend).then((xml) => {
+            let box = document.querySelector('#schema_legend');
+            if(box) {
+                if (legendSvg) {
+                    box.removeChild(legendSvg);
+                }
+
+                let doc = xml.documentElement;
+                doc.setAttribute("preserveAspectRatio", "xMidYMin");
+                doc.setAttribute("height", "100%");
+                doc.setAttribute("width", "100%");
+                let svg = d3.select(doc);
+                box.appendChild(svg.node());
+
+                setLegendSvg(svg.node())
+            }
+        });
+    }, [schemaDesc.legend]);
+
+    useEffect(() => {
+        if(!schemaDesc.table) {
+            let box = document.querySelector('#schema_table');
+            if(box && tableSvg) {
+                box.removeChild(tableSvg);
+            }
+            setTableSvg(undefined);
+            return;
+        }
+        d3.xml(schemaDesc.table).then((xml) => {
+            let box = document.querySelector('#schema_table');
+            if(box) {
+                if (tableSvg) {
+                    box.removeChild(tableSvg);
+                }
+
+                let doc = xml.documentElement;
+                doc.setAttribute("preserveAspectRatio", "xMidYMin");
+                doc.setAttribute("height", "100%");
+                doc.setAttribute("width", "100%");
+                let svg = d3.select(doc);
+                box.appendChild(svg.node());
+
+                setTableSvg(svg.node())
+            }
+        });
+    }, [schemaDesc.legend]);
+
+    const handleClickRegion = (event, selection) => {
+        console.log('Region clicked', event, selection.attr('id'));
+        const sd = getSchema(selection.attr('id'));
+        setSchemaDesc(sd);
+    }
+
+    const handleCloseButton = (event, selection) => {
+        console.log('Close clicked', event, selection.attr('id'));
+        const sd = getSchema('orw');
+        setSchemaDesc(sd);
+    }
+
+    const handleLoadComplete = (svg) => {
+        svg.selectAll('#terms > *').on('click', handleClickPicket);
+        svg.selectAll('g[id^="port"]').on('click', handleClickPort);
+        svg.selectAll("#go_region").selectAll("*").on('click', handleClickGoRegion);
     }
 
     return (
@@ -93,10 +223,7 @@ const SchemaOrw = (props) => {
                                 <ZoomOutMap className={classes.zoomIcons} onClick={resetTransform}/>
                             </div>
                             <TransformComponent {...props.style}>
-                                <SvgView resetZoom={resetTransform}
-                                         name={'schema_orw'} url={SchemaOrwSvg}
-                                         style={{width: '80vh', height: '80vh'}}
-                                         onSvgClick={ HandleOnClick }/>
+                                <SvgView name='schema' style={{width: '80vh', height: '80vh'}}/>
                             </TransformComponent>
                         </div>
                     )}
@@ -109,13 +236,10 @@ const SchemaOrw = (props) => {
                         </Paper>
                     </Grid>
                     <Grid item xs={12} md={12} lg={12}>
-                        <Paper>
-                        </Paper>
+                        <SvgView name='schema_table' style={{width: '30vh', height: '20vh'}}/>
                     </Grid>
                     <Grid item xs={12} md={12} lg={12}>
-                        <SvgView name={'legend_orw'} url={LegendSvg}
-                                 style={{width: '30vh', height: '20vh'}}
-                                 onSvgClick={ () => {console.log('Legend click') }}/>
+                        <SvgView name='schema_legend' style={{width: '30vh', height: '20vh'}}/>
                     </Grid>
                 </Grid>
             </Grid>
