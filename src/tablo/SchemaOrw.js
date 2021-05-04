@@ -11,6 +11,14 @@ import SchemaOrwSvg from "../../public/svg/tablo.svg";
 import LegendOrwSvg from "../../public/svg/legend.svg";
 import Tooltip from "@material-ui/core/Tooltip";
 
+import Menu from '@material-ui/core/Menu'
+import MenuItem from '@material-ui/core/MenuItem'
+import {
+    usePopupState,
+    bindTrigger,
+    bindMenu,
+} from 'material-ui-popup-state/hooks'
+
 const icons = {
     zoomIn: "./svg/icons/button/zoom.svg",
     zoomOut: "./svg/icons/button/out.svg",
@@ -86,6 +94,15 @@ const SchemaOrw = (props) => {
     const [legendSvg, setLegendSvg] = useState();
     const [tableSvg, setTableSvg] = useState();
 
+    const [anchorEl, setAnchorEl] = React.useState(null);
+    const showMenu = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
+    const closeMenu = () => {
+        setAnchorEl(null);
+    };
+
+
     useEffect(() => {
         console.log('RegionState', schemaState);
         if(!schemaState.desc.schema) {
@@ -142,13 +159,12 @@ const SchemaOrw = (props) => {
                 // Select picket
                 svg.selectAll("#terms > *").on('click', function (event) {
                     console.log('Picket', d3.select(this).attr('id'));
+                    showMenu(event);
                 });
                 svg.selectAll("#terms > *").on("mouseenter", function(event) {
-                    setToolTipText('Picket');
                     d3.select(this).attr("opacity", "1");
                 });
                 svg.selectAll("#terms > *").on("mouseleave", function(event) {
-                    setToolTipText('');
                     d3.select(this).attr("opacity", "0.4");
                 });
                 //Select port
@@ -171,7 +187,7 @@ const SchemaOrw = (props) => {
     }, [schemaState.desc]);
 
     useEffect(() => {
-        if(!schemaState.legend) {
+        if(!schemaState.desc.legend) {
             let box = document.querySelector('#schema_legend');
             if(box && legendSvg) {
                 box.removeChild(legendSvg);
@@ -179,7 +195,7 @@ const SchemaOrw = (props) => {
             setLegendSvg(undefined);
             return;
         }
-        d3.xml(schemaState.legend).then((xml) => {
+        d3.xml(schemaState.desc.legend).then((xml) => {
             let box = document.querySelector('#schema_legend');
             if(box) {
                 if (legendSvg) {
@@ -199,7 +215,7 @@ const SchemaOrw = (props) => {
     }, [schemaState.desc]);
 
     useEffect(() => {
-        if(!schemaState.table) {
+        if(!schemaState.desc.table) {
             let box = document.querySelector('#schema_table');
             if(box && tableSvg) {
                 box.removeChild(tableSvg);
@@ -207,7 +223,7 @@ const SchemaOrw = (props) => {
             setTableSvg(undefined);
             return;
         }
-        d3.xml(schemaState.table).then((xml) => {
+        d3.xml(schemaState.desc.table).then((xml) => {
             let box = document.querySelector('#schema_table');
             if(box) {
                 if (tableSvg) {
@@ -254,6 +270,17 @@ const SchemaOrw = (props) => {
                             </div>
                             <TransformComponent {...props.style}>
                                 <SvgView name='schema' style={{width: '80vh', height: '80vh'}}/>
+                                <Menu
+                                    id="simple-menu"
+                                    anchorEl={anchorEl}
+                                    keepMounted
+                                    open={Boolean(anchorEl)}
+                                    onClose={closeMenu}
+                                >
+                                    <MenuItem onClick={closeMenu}>Profile</MenuItem>
+                                    <MenuItem onClick={closeMenu}>My account</MenuItem>
+                                    <MenuItem onClick={closeMenu}>Logout</MenuItem>
+                                </Menu>
                             </TransformComponent>
                         </div>
                     )}
