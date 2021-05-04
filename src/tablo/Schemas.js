@@ -29,47 +29,75 @@ import SchemaVitebskSvg from '/public/svg/vit.svg';
 import LegendVitebskSvg from '/public/svg/vit_legend.svg';
 import TableVitebskSvg from '/public/svg/vit_legend_table.svg';
 
-export { SchemaOrwSvg, LegendOrwSvg }
-export { SchemaCitySvg, LegendCitySvg }
-export { SchemaMoscowSvg, LegendMoscowSvg, TableMoscowSvg }
-export { SchemaMurmanskSvg, LegendMurmanskSvg, TableMurmanskSvg }
-export { SchemaPetrozavodskSvg, LegendPetrozavodskSvg, TablePetrozavodskSvg }
-export { SchemaSpbSvg, LegendSpbSvg, TableSpbSvg }
-export { SchemaVolhovSvg, LegendVolhovSvg, TableVolhovSvg }
-export { SchemaVitebskSvg, LegendVitebskSvg, TableVitebskSvg }
+import {useEffect, useRef, useState} from "react";
 
-export function getSchema(id) {
-//    console.log('Schema id', id)
-    switch(id) {
+export {SchemaOrwSvg, LegendOrwSvg}
+export {SchemaCitySvg, LegendCitySvg}
+export {SchemaMoscowSvg, LegendMoscowSvg, TableMoscowSvg}
+export {SchemaMurmanskSvg, LegendMurmanskSvg, TableMurmanskSvg}
+export {SchemaPetrozavodskSvg, LegendPetrozavodskSvg, TablePetrozavodskSvg}
+export {SchemaSpbSvg, LegendSpbSvg, TableSpbSvg}
+export {SchemaVolhovSvg, LegendVolhovSvg, TableVolhovSvg}
+export {SchemaVitebskSvg, LegendVitebskSvg, TableVitebskSvg}
+
+import UstLugaSvg from '/public/svg/ust-luga.svg'
+import VysockSvg from '/public/svg/vysotsk.svg'
+import KandalakshaSvg from '/public/svg/kandalaksha.svg'
+import SpbPortSvg from '/public/svg/spb_port.svg'
+import MurmPortSvg from '/public/svg/murm_port.svg'
+import VyborgSvg from '/public/svg/Vyborg.svg'
+
+export {UstLugaSvg, VyborgSvg, VysockSvg, KandalakshaSvg, SpbPortSvg, MurmPortSvg}
+
+const initialState =  {desc: {schema: SchemaOrwSvg, legend: LegendOrwSvg, table: undefined}};
+
+export function schemaReducer(state, action) {
+    switch (action.type) {
+        case 'root':
+            return {desc: {schema: SchemaOrwSvg, legend: LegendOrwSvg, table: undefined}};
         case 'orw':
-            return {schema: SchemaOrwSvg, legend: LegendOrwSvg, table: undefined};
+            return {desc: {schema: SchemaOrwSvg, legend: LegendOrwSvg, table: undefined}, prev: initialState};
         case 'city':
-            return {schema: SchemaCitySvg, legend: LegendCitySvg, table: undefined};
+            return {desc: {schema: SchemaCitySvg, legend: LegendCitySvg, table: undefined}, prev: initialState};
         case 'nod1':
         case 'Рег-1':
         case 'go_moscow':
-            return {schema: SchemaMoscowSvg, legend: LegendMoscowSvg, table: TableMoscowSvg};
+            return {desc: {schema: SchemaMoscowSvg, legend: LegendMoscowSvg, table: TableMoscowSvg}, prev: initialState};
         case 'nod2':
         case 'Рег-2':
         case 'go_spb_vit':
-            return {schema: SchemaVitebskSvg, legend: LegendVitebskSvg, table: TableVitebskSvg};
+            return {desc: {schema: SchemaVitebskSvg, legend: LegendVitebskSvg, table: TableVitebskSvg}, prev: initialState};
         case 'nod3':
         case 'Рег-3':
         case 'go_spb':
-            return {schema: SchemaSpbSvg, legend: LegendSpbSvg, table: TableSpbSvg};
+            return {desc: {schema: SchemaSpbSvg, legend: LegendSpbSvg, table: TableSpbSvg}, prev: initialState};
         case 'nod4':
         case 'Рег-4':
         case 'go_petrozavodsk':
-            return {schema: SchemaPetrozavodskSvg, legend: LegendPetrozavodskSvg, table: TablePetrozavodskSvg};
+            return {desc: {schema: SchemaPetrozavodskSvg, legend: LegendPetrozavodskSvg, table: TablePetrozavodskSvg}, prev: initialState};
         case 'nod5':
         case 'Рег-5':
         case 'go_murm':
-            return {schema: SchemaMurmanskSvg, legend: LegendMurmanskSvg, table: TableMurmanskSvg};
+            return {desc: {schema: SchemaMurmanskSvg, legend: LegendMurmanskSvg, table: TableMurmanskSvg}, prev: initialState};
         case 'nod6':
         case 'Рег-6':
         case 'go_volhov':
-            return {schema: SchemaVolhovSvg, legend: LegendVolhovSvg, table: TableVolhovSvg};
+            return {desc: {schema: SchemaVolhovSvg, legend: LegendVolhovSvg, table: TableVolhovSvg}, prev: initialState};
+        case 'port_st_07630':
+            return {desc: {schema: UstLugaSvg, legend: undefined, table: undefined}, prev: state};
+        case 'port_st_02060':
+            return {desc: {schema: VysockSvg, legend: undefined, table: undefined}, prev: state};
+        case 'port_st_01490':
+            return {desc: {schema: KandalakshaSvg, legend: undefined, table: undefined}, prev: state};
+        case 'port_st_03580':
+            return {desc: {schema: SpbPortSvg, legend: undefined, table: undefined}, prev: state};
+        case 'port_st_01840':
+            return {desc: {schema: MurmPortSvg, legend: undefined, table: undefined}, prev: state};
+        case 'port_st_02000':
+            return {desc: {schema: VyborgSvg, legend: undefined, table: undefined}, prev: state};
+        case 'back':
+            return state.prev;
         default:
-            return {schema: undefined, legend: undefined, table: undefined};
+            return state; //{schema: undefined, legend: undefined, table: undefined};
     }
 }

@@ -1,12 +1,15 @@
-import React, {useEffect, useState} from 'react';
+import React, {createContext, useEffect, useReducer, useRef, useState} from 'react';
 import {TransformComponent, TransformWrapper} from "react-zoom-pan-pinch";
 import {makeStyles} from "@material-ui/core/styles";
 import {ZoomIn, ZoomOut, ZoomOutMap} from '@material-ui/icons';
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
-import {getSchema} from './Schemas';
+import {schemaReducer} from './Schemas';
 import SvgView from "./SvgView";
 import * as d3 from "d3";
+import SchemaOrwSvg from "../../public/svg/tablo.svg";
+import LegendOrwSvg from "../../public/svg/legend.svg";
+import Tooltip from "@material-ui/core/Tooltip";
 
 const icons = {
     zoomIn: "./svg/icons/button/zoom.svg",
@@ -73,20 +76,19 @@ const styleButtonZoom = {
     height: "20px",
 };
 
-
 const SchemaOrw = (props) => {
     const classes = useStyles();
 
-    const [schemaDesc, setSchemaDesc] = useState(() => {
-        return getSchema('orw');
-    });
+    const initialState = {desc: {schema: SchemaOrwSvg, legend: LegendOrwSvg, table: undefined}};
+    const [schemaState, dispatchSchema] = useReducer(schemaReducer, initialState, undefined);
 
     const [schemaSvg, setSchemaSvg] = useState();
     const [legendSvg, setLegendSvg] = useState();
     const [tableSvg, setTableSvg] = useState();
 
     useEffect(() => {
-        if(!schemaDesc.schema) {
+        console.log('RegionState', schemaState);
+        if(!schemaState.desc.schema) {
             let box = document.querySelector('#schema');
             if(box && schemaSvg) {
                 box.removeChild(schemaSvg);
@@ -94,7 +96,7 @@ const SchemaOrw = (props) => {
             setSchemaSvg(undefined);
             return;
         }
-        d3.xml(schemaDesc.schema).then((xml) => {
+        d3.xml(schemaState.desc.schema).then((xml) => {
             let box = document.querySelector('#schema');
             if (box) {
                 if (schemaSvg) {
@@ -107,16 +109,7 @@ const SchemaOrw = (props) => {
                 doc.setAttribute("width", "100%");
                 let svg = d3.select(doc);
 
-                svg.select("#buttons").selectAll("g").on('click', function (event) {
-                    handleClickRegion(event, d3.select(this));
-                });
-                svg.select("#buttons").selectAll("g").on("mouseenter", function (event) {
-                    d3.select(this).selectAll("rect").attr("fill-opacity", "1");
-                });
-                svg.select("#buttons").selectAll("g").on("mouseleave", function (event) {
-                    d3.select(this).selectAll("rect").attr("fill-opacity", "0.35");
-                });
-
+                // Select Close Button
                 svg.select("#close_button").on("click", function(event) {
                     handleCloseButton(event, d3.select(this));
                 });
@@ -126,19 +119,59 @@ const SchemaOrw = (props) => {
                 svg.select("#close_button").on("mouseleave", function(event) {
                     d3.select(this).attr("opacity", "0.595982143");
                 });
-
+                // Select region
+                svg.select("#buttons").selectAll("g").on('click', function (event) {
+                    handleClickRegion(event, d3.select(this));
+                });
+                svg.select("#buttons").selectAll("g").on("mouseenter", function (event) {
+                    d3.select(this).selectAll("rect").attr("fill-opacity", "1");
+                });
+                svg.select("#buttons").selectAll("g").on("mouseleave", function (event) {
+                    d3.select(this).selectAll("rect").attr("fill-opacity", "0.35");
+                });
+                // Go region
                 svg.selectAll("#go_region").selectAll("*").on('click', function (event) {
                     handleClickRegion(event, d3.select(this));
+                });
+                svg.selectAll("#go_region").selectAll("*").on("mouseenter", function(event) {
+                    d3.select(this).attr("opacity", "0.4");
+                });
+                svg.selectAll("#go_region").selectAll("*").on("mouseleave", function(event) {
+                    d3.select(this).attr("opacity", "1");
+                });
+                // Select picket
+                svg.selectAll("#terms > *").on('click', function (event) {
+                    console.log('Picket', d3.select(this).attr('id'));
+                });
+                svg.selectAll("#terms > *").on("mouseenter", function(event) {
+                    setToolTipText('Picket');
+                    d3.select(this).attr("opacity", "1");
+                });
+                svg.selectAll("#terms > *").on("mouseleave", function(event) {
+                    setToolTipText('');
+                    d3.select(this).attr("opacity", "0.4");
+                });
+                //Select port
+                svg.selectAll('g[id^="port"]').on('click', function(event) {
+                    handleClickPort(event, d3.select(this.parentNode));
+                });
+                svg.selectAll('g[id^=\"port\"]').on("mouseenter", function(event) {
+                    const circle = this.children[0];
+                    circle.setAttribute("fill", "#d0f0ff");
+                });
+                svg.selectAll('g[id^=\"port\"]').on("mouseleave", function(event) {
+                    const circle = this.children[0];
+                    circle.setAttribute("fill", "#ffffff");
                 });
 
                 box.appendChild(svg.node());
                 setSchemaSvg(svg.node());
             }
         });
-    }, [schemaDesc.schema]);
+    }, [schemaState.desc]);
 
     useEffect(() => {
-        if(!schemaDesc.legend) {
+        if(!schemaState.legend) {
             let box = document.querySelector('#schema_legend');
             if(box && legendSvg) {
                 box.removeChild(legendSvg);
@@ -146,7 +179,7 @@ const SchemaOrw = (props) => {
             setLegendSvg(undefined);
             return;
         }
-        d3.xml(schemaDesc.legend).then((xml) => {
+        d3.xml(schemaState.legend).then((xml) => {
             let box = document.querySelector('#schema_legend');
             if(box) {
                 if (legendSvg) {
@@ -163,10 +196,10 @@ const SchemaOrw = (props) => {
                 setLegendSvg(svg.node())
             }
         });
-    }, [schemaDesc.legend]);
+    }, [schemaState.desc]);
 
     useEffect(() => {
-        if(!schemaDesc.table) {
+        if(!schemaState.table) {
             let box = document.querySelector('#schema_table');
             if(box && tableSvg) {
                 box.removeChild(tableSvg);
@@ -174,7 +207,7 @@ const SchemaOrw = (props) => {
             setTableSvg(undefined);
             return;
         }
-        d3.xml(schemaDesc.table).then((xml) => {
+        d3.xml(schemaState.table).then((xml) => {
             let box = document.querySelector('#schema_table');
             if(box) {
                 if (tableSvg) {
@@ -191,24 +224,21 @@ const SchemaOrw = (props) => {
                 setTableSvg(svg.node())
             }
         });
-    }, [schemaDesc.legend]);
+    }, [schemaState.desc]);
 
     const handleClickRegion = (event, selection) => {
         console.log('Region clicked', event, selection.attr('id'));
-        const sd = getSchema(selection.attr('id'));
-        setSchemaDesc(sd);
+        dispatchSchema({type: selection.attr('id')});
     }
 
     const handleCloseButton = (event, selection) => {
-        console.log('Close clicked', event, selection.attr('id'));
-        const sd = getSchema('orw');
-        setSchemaDesc(sd);
+        console.log('Close region', event, selection.attr('id'));
+        dispatchSchema({type: 'back'});
     }
 
-    const handleLoadComplete = (svg) => {
-        svg.selectAll('#terms > *').on('click', handleClickPicket);
-        svg.selectAll('g[id^="port"]').on('click', handleClickPort);
-        svg.selectAll("#go_region").selectAll("*").on('click', handleClickGoRegion);
+    const handleClickPort = (event, selection) => {
+        console.log('Port clicked', event, selection.attr('id'));
+        dispatchSchema({type: 'port_' + selection.attr('id')});
     }
 
     return (
